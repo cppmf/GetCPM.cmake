@@ -12,19 +12,25 @@ GetCPM.cmake let's you add [CPM](https://github.com/TheLartians/CPM.cmake) to yo
 
 ```bash
 # Using wget
-mkdir -p cmake
-wget -O cmake/CPM.cmake https://raw.githubusercontent.com/CppMf/GetCPM.cmake/glob/master/GetCPM.cmake
+mkdir cmake
+wget -O cmake/CPM.cmake https://raw.githubusercontent.com/cppmf/GetCPM.cmake/master/GetCPM.cmake
 ```
 
 ```bash
 # Using curl
-mkdir -p cmake
-curl -o cmake/CPM.cmake https://github.com/TheLartians/CPM.cmake/releases/latest/download/get_cpm.cmake
+mkdir cmake
+curl -o cmake/CPM.cmake https://raw.githubusercontent.com/cppmf/GetCPM.cmake/master/GetCPM.cmake
 ```
 
 ```bash
 # Using aria2
-aria2c -d cmake -o CPM.cmake https://github.com/TheLartians/CPM.cmake/releases/latest/download/get_cpm.cmake
+aria2c -d cmake -o CPM.cmake https://raw.githubusercontent.com/cppmf/GetCPM.cmake/master/GetCPM.cmake
+```
+
+```powershell
+# for powershell user
+New-Item -Name "cmake" -ItemType "directory"
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/cppmf/GetCPM.cmake/master/GetCPM.cmake" -OutFile "cmake/CPM.cmake" -ErrorAction Stop -Verbose
 ```
 
 then add it to CMakeLists.txt file
