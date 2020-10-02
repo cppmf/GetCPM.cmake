@@ -1,3 +1,10 @@
+# This script is part of CPM.cmake under the following license
+#
+# MIT License
+# Copyright (c) 2019 Lars Melchior
+#
+
+
 # Set the cpm.cmake version to use
 # Check for the latest version at : https://github.com/TheLartians/CPM.cmake/releases
 set(CPM_DOWNLOAD_VERSION 0.27.3)
