@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./img/GetCPM.png" height="100" />
+  <img src="https://github.com/cppmf/artwork/raw/master/banner/GetCPM.cmake/GetCPM.png" height="100" />
 </p>
 
 <p align="center">
