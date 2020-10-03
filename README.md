@@ -40,4 +40,8 @@ then add it to CMakeLists.txt file
 include(cmake/CPM.cmake)
 ```
 
+You can use a different version of CPM.cmake by defining `CPM_CMAKE_VERSION` variable.
+
+#
+
 For a full documentation about CPM, visit the original author repository : [TheLartians/CPM.cmake](https://github.com/TheLartians/CPM.cmake)

@@ -4,10 +4,14 @@
 # Copyright (c) 2019 Lars Melchior
 #
 
+# define CPM version if not set
+if(NOT CPM_CMAKE_VERSION)
+  set(CPM_CMAKE_VERSION 0.27.3)
+ endif()
 
 # Set the cpm.cmake version to use
 # Check for the latest version at : https://github.com/TheLartians/CPM.cmake/releases
-set(CPM_DOWNLOAD_VERSION 0.27.3)
+set(CPM_DOWNLOAD_VERSION ${CPM_CMAKE_VERSION})
 
 # Define where to store the downloaded version of cpm.cmake
 # You can define where to store by source packages by defining CPM_SOURCE_CACHE
