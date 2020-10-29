@@ -6,7 +6,7 @@
 
 # define CPM version if not set
 if(NOT CPM_CMAKE_VERSION)
-  set(CPM_CMAKE_VERSION 0.27.3)
+  set(CPM_CMAKE_VERSION 0.27.5)
  endif()
 
 # Set the cpm.cmake version to use
