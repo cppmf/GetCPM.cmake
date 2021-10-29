@@ -13,31 +13,31 @@ GetCPM.cmake let's you add [CPM](https://github.com/TheLartians/CPM.cmake) to yo
 ```bash
 # Using wget
 mkdir cmake
-wget -O cmake/CPM.cmake https://raw.githubusercontent.com/cppmf/GetCPM.cmake/master/GetCPM.cmake
+wget -O cmake/GetCPM.cmake https://raw.githubusercontent.com/cppmf/GetCPM.cmake/master/GetCPM.cmake
 ```
 
 ```bash
 # Using curl
 mkdir cmake
-curl -o cmake/CPM.cmake https://raw.githubusercontent.com/cppmf/GetCPM.cmake/master/GetCPM.cmake
+curl -o cmake/GetCPM.cmake https://raw.githubusercontent.com/cppmf/GetCPM.cmake/master/GetCPM.cmake
 ```
 
 ```bash
 # Using aria2
-aria2c -d cmake -o CPM.cmake https://raw.githubusercontent.com/cppmf/GetCPM.cmake/master/GetCPM.cmake
+aria2c -d cmake -o GetCPM.cmake https://raw.githubusercontent.com/cppmf/GetCPM.cmake/master/GetCPM.cmake
 ```
 
 ```powershell
 # for powershell user
 New-Item -Name "cmake" -ItemType "directory"
-Invoke-WebRequest -Uri "https://raw.githubusercontent.com/cppmf/GetCPM.cmake/master/GetCPM.cmake" -OutFile "cmake/CPM.cmake" -ErrorAction Stop -Verbose
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/cppmf/GetCPM.cmake/master/GetCPM.cmake" -OutFile "cmake/GetCPM.cmake" -ErrorAction Stop -Verbose
 ```
 
 then add it to CMakeLists.txt file
 
 ```bash
 # add dependencies
-include(cmake/CPM.cmake)
+include(cmake/GetCPM.cmake)
 ```
 
 You can use a different version of CPM.cmake by defining `CPM_CMAKE_VERSION` variable.
