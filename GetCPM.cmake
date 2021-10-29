@@ -6,8 +6,8 @@
 
 # define CPM version if not set
 if(NOT CPM_CMAKE_VERSION)
-  set(CPM_CMAKE_VERSION 0.27.5)
- endif()
+  set(CPM_CMAKE_VERSION 0.34.0)
+endif()
 
 # Set the cpm.cmake version to use
 # Check for the latest version at : https://github.com/TheLartians/CPM.cmake/releases
@@ -17,6 +17,9 @@ set(CPM_DOWNLOAD_VERSION ${CPM_CMAKE_VERSION})
 # You can define where to store by source packages by defining CPM_SOURCE_CACHE
 # If not, it will be stored in the default location
 if(CPM_SOURCE_CACHE)
+  # Expand relative path. This is important if the provided path contains a tilde (~)
+  get_filename_component(CPM_SOURCE_CACHE ${CPM_SOURCE_CACHE} ABSOLUTE)
+  # Define download location
   set(CPM_DOWNLOAD_LOCATION "${CPM_SOURCE_CACHE}/cpm/CPM_${CPM_DOWNLOAD_VERSION}.cmake")
 elseif(DEFINED ENV{CPM_SOURCE_CACHE})
   set(CPM_DOWNLOAD_LOCATION "$ENV{CPM_SOURCE_CACHE}/cpm/CPM_${CPM_DOWNLOAD_VERSION}.cmake")
